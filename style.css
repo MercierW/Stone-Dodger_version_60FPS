@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    overflow: hidden;
+}
+
+a {
+    color: antiquewhite;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+.main-box {
+    width: 100%;
+}
+
+.canvas-box {
+    position: relative;
+    width: 100%;
+}
+
+.box-timer {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+
+}
+.timer {
+    color: antiquewhite;
+    width: 100%;
+}
+
+#canvas {
+    width: 100%;
+}
+
+.modal{
+    position: absolute;
+    padding: 0 25px 39px 25px;
+    border-radius: 10px;
+    width: 500px;
+    top: 40%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(131, 101, 80);
+    font-family: "Chakra Petch", sans-serif;
+    box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.8);
+    z-index: 2;
+}
+
+.modal > p ,h3 {
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+.modal > h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal > p {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.modal > p > span, a {
+    font-weight: 800;
+    color: rgb(155, 221, 80);
+}
+
+.btn-play {
+    cursor: pointer;
+    padding: 15px 30px;
+    margin: auto;
+    border-style: none;
+    display: block;
+    border-radius: 3px;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: "Chakra Petch", sans-serif;
+    background-color: rgb(156, 124, 81);
+    color: antiquewhite;
+    border: 1px solid rgb(41, 38, 38);
+}
+
+.p {
+    text-align: center;
+}
+
+.btn-play:hover {
+    background-color: rgb(192, 152, 99);
+}
+
+.d-none {
+    display: none;
+}

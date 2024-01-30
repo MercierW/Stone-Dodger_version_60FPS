@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Dodger</title>
+    <link rel="icon" type="image/vnd.icon" href="./img/rocher.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div  id="overlay"></div>
+    <div class="main-box">
+      <div class="canvas-box">
+        <div id="modal-intro-01" class="modal">
+          <h3>Bienvenue sur <span>Stone Dodger</span></h3>
+          <p>Le contrôle du personnage se fait avec les touches : </p>
+          <p class="p"><span>Z</span>, <span>Q</span>, <span>D</span> (HAUT, GAUCHE, DROITE)</p>
+          <p class="p">Bon jeu !</p>
+          <button id="btn-start-01" class="btn-play">SUIVANT -></button>
+        </div>
+        <div id="modal-intro-02" class="modal d-none">
+          <h3>OH NON !</h3>
+          <p>Pendant que le petit Goichi se promenait, un terrible tremblement de terre s'est produit...</p>
+          <p>Aide le petit Goichi à survivre, en évitant les grosses pierres jusqu'à la fin de l'éboulement pour qu'il puisse rentrer chez lui sain et sauf !</p>
+          <p>Si tu y parviens, Goichi te donnera <span>une chouette récompense</span> !</p>
+          <button id="btn-start-02" class="btn-play">SAUVER GOICHI !</button>
+        </div>
+        <div id="modal-win-01" class="modal d-none">
+          <h3>VOUS AVEZ RÉUSSIS !</h3>
+          <p>Goichi vous remercie pour votre aide et vous donne <span> une enveloppe</span> en récompense.</p>
+          <button id="btn-win-01" class="btn-play">OUVRIR L'ENVELOPPE</button>
+        </div>
+        <div id="modal-win-02" class="modal d-none">
+          <h3>MERCI D'AVOIR JOUÉ !</h3>
+          <p>J'espère que cela vous aura plu. :]</p>
+          <p>Si vous voulez en savoir plus sur moi et mon parcours pro ou me contacter n'hésitez pas à regarder mon <a href="./pdf/William_Mercier_Dev_Web_FS_JS.pdf" target="_blank"><span>CV</span></a> et mon compte <a href="https://www.linkedin.com/in/william-mercier-pro/" target="_blank"><span>LinkedIn</span></a> !</p>
+        </div>
+        <div id="modal-lose" class="modal d-none">
+          <h3>GOICHI A PERI...</h3>
+          <p>Vous n'avez pas réussis à sauver le petit Goichi et celui-ci est mort d'en<span> d'atroces souffrances</span>.</p>
+          <button id="btn-lose-01" class="btn-play">RECOMMENCER ?</button>
+        </div>
+        <div class="box-timer">
+          <div class="timer">Timer : 60s</div>
+        </div>
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+  <script src="./index.js"></script>
+</body>
+</html>
